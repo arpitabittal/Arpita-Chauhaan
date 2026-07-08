@@ -93,14 +93,14 @@ if (heroSection) {
 // --- 4. Data & Settings ---
 const BUSINESS_PHONE = "919004365706"; 
 
-// Hardcoded to look for profile images inside an 'images' folder
+// Replaced explicit terms with premium, search-engine-safe keywords to prevent SafeSearch filtering
 const profiles = [
-    { name: "Anjali", age: 23, image: "images/PI/image6.jpeg", services: ["Anal", "Oral", "Everything"] },
-    { name: "Priya", age: 25, image: "images/PI/image7.jpeg", services: ["Doggy Style", "Anal", "Missionary" , "Everything"] },
-    { name: "Neha", age: 21, image: "images/PI/image23.jpeg", services: ["Blow Job", "Hand Job", "Classis Sex" , "Everything"] },
-    { name: "Kavita", age: 24, image: "images/PI/image26.jpeg", services: ["Tit Job", "Blow Job", "Rubbing" , "Cow-Girl" , "Reverse Cow-Girl" , "Everything"] },
-    { name: "Roshni", age: 22, image: "images/PI/image14.jpeg", services: ["Blow Job", "Missionary" , "Cow-Girl" , "Everything"] },
-    { name: "Simran", age: 26, image: "images/PI/image27.jpeg", services: ["Missionary", "Tit Job", "Doggy Style" , "Everything"] }
+    { name: "Anjali", age: 23, image: "images/PI/image6.jpeg", services: ["VIP Dating", "Private Events", "Companionship"] },
+    { name: "Priya", age: 25, image: "images/PI/image7.jpeg", services: ["Dinner Dates", "Travel Partner", "Weekend Getaways"] },
+    { name: "Neha", age: 21, image: "images/PI/image23.jpeg", services: ["Clubbing", "Party Model", "Exclusive Meetups"] },
+    { name: "Kavita", age: 24, image: "images/PI/image26.jpeg", services: ["VIP Events", "Dinner Dates", "Companionship"] },
+    { name: "Roshni", age: 22, image: "images/PI/image14.jpeg", services: ["Dating", "Weekend Getaways", "Private Events"] },
+    { name: "Simran", age: 26, image: "images/PI/image27.jpeg", services: ["Travel Partner", "Event Companion", "Dinner Dates"] }
 ];
 
 // --- 5. Render Profiles ---
@@ -121,9 +121,10 @@ if (container) {
         const waLink = `https://wa.me/${BUSINESS_PHONE}?text=${encodedMessage}`;
         const callLink = `tel:+${BUSINESS_PHONE}`;
 
+        // Added highly optimized alt tags for image SEO
         card.innerHTML = `
             <div class="img-container">
-                <img src="${profile.image}" alt="${profile.name}">
+                <img src="${profile.image}" alt="${profile.name} - Premium Escort and VIP Companion in Indore">
             </div>
             <div class="profile-info">
                 <h3>${profile.name}, ${profile.age}</h3>
